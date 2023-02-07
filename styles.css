@@ -1,0 +1,112 @@
+html {
+    min-height: 100%;
+}
+body {
+    background-color: rgb(134, 134, 134);
+    display: grid;
+    grid-template: 1fr 4fr 1fr / 1fr;
+    margin: 0;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+footer{
+    background-color: rgb(85, 76, 76);
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    padding: 1px 1px;
+}
+
+#navigation, footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    color: gray;
+    border: ridge white 0.2vw;
+    border-radius: 4px;
+}
+
+#navigation p{
+   background-color: gray;
+   color: rgb(0, 2, 31);
+   border-radius: 4px;
+   padding: 10px 10px;
+   border: solid white 2px;
+   text-shadow: 0.5px 0.5px black;
+   text-align: center;
+   align-self: center;
+   transition: 300ms;
+}
+
+#navigation p:hover{
+    cursor: pointer;
+    background: radial-gradient(circle, rgb(175, 175, 175) 0%, rgb(85, 84, 84) 100%);
+    padding: 15px 15px;
+    transition: 300ms;
+}
+#navigation p:active{
+    border: solid rgb(97, 97, 97) 5px;
+    filter: contrast(150%);
+}
+
+footer img{
+    width: 103px;
+    height: 103px;
+}
+#instlg{
+    width: 83px;
+    height: 83px;
+    transform: translateY(10px);
+}
+
+#instlg:hover{
+    transform: translateY(5px);
+}
+
+footer img:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+    transition: 300ms;
+    transform: translateY(-10px);
+}
+main{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    padding: 10px 10px;
+}
+#eu{
+    width: 206px;
+    height: 206px;
+}
+
+#conteudo{
+    border: solid black 3px;
+    border-radius: 4px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#conteudo p, #conteudo h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0.5px 0.5px rgb(190, 190, 190);
+}
+#conteudo p{
+    font-size: 22px;
+}
+#conteudo h1{
+    font-size: 32px;
+}
+
+footer p{
+    font-size: 24px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
